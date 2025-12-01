@@ -1,4 +1,4 @@
-test_product.py
+
 from product import product_info
 
 def test_product_info():
@@ -8,6 +8,5 @@ def test_product_info():
         "Quantity: 5\n"
         "Price: 799.5"
     )
-
-    assert product_info("P102", "Keyboard", 5, 799.5) == expected_output
-
+    result = product_info("P102", "Keyboard", 5, 799.5)
+    assert result == expected_output
